@@ -33,13 +33,14 @@ class Tester extends React.Component {
         },
         {
             dataField: "ground",
-            heading: "Ground"
+            heading: "Ground",
+            filterable: true
         },
         {
             dataField: "date",
             heading: "Date",
             sortType: "date",
-            sortDateFormat: "DD/MM/YYYY",
+            sortDateFormat: "dd/MM/yyyy",
             sortOrder: "asc"
         }
 
@@ -48,7 +49,8 @@ class Tester extends React.Component {
         visibleRows: 1,
         allowSorting: true,
         showPagination: true,
-        initialRowsPerPage: 20
+        initialRowsPerPage: 50,
+        allowFiltering: true
     };
 
     render() {
