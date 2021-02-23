@@ -4,9 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import odiData from './odi.json';
 
-class Tester extends React.Component {
+export const DataTableTester = () => {
 
-    columns = [
+    const columns = [
         {
             dataField: "opposition",
             heading: "Opposition"
@@ -45,7 +45,7 @@ class Tester extends React.Component {
         }
 
     ];
-    controls = {
+    const controls = {
         visibleRows: 1,
         allowSorting: true,
         showPagination: true,
@@ -53,12 +53,10 @@ class Tester extends React.Component {
         allowFiltering: true
     };
 
-    render() {
-        return (
-            <BootstrapTreeTable columns={this.columns} tableData={odiData} control={this.controls}/>
-        );
-    }
+    return (
+        <BootstrapTreeTable columns={columns} tableData={odiData} control={controls}/>
+    );
 
 };
 
-export default Tester;
+export default DataTableTester;
