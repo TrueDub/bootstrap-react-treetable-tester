@@ -1,8 +1,9 @@
-import './App.css';
-import DataTableTester from "./tester/DataTableTester";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 import React from 'react';
+import DataTableTester from "./tester/DataTableTester";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import TreeTableTester from "./tester/TreeTableTester";
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
                 <p/>
                 <div>
                     <table className="table">
+                        <tbody>
                         <tr>
                             <td>
                                 <button className="btn btn-outline-primary" onClick={showDataTable.bind(null)}>DataTable</button>
@@ -45,6 +47,7 @@ function App() {
                                 <button className="btn btn-outline-primary" onClick={showMultiRowTable.bind(null)}>Multi-row</button>
                             </td>
                         </tr>
+                        </tbody>
                     </table>
                 </div>
                 <div className={showValue === 1 ? 'shown' : 'hidden'}>
@@ -52,15 +55,15 @@ function App() {
                     <DataTableTester/>
                 </div>
                 <div className={showValue === 2 ? 'shown' : 'hidden'}>
-                    <h5>TreeTable - </h5>
-
+                    <h5>TreeTable - Euro Capitals</h5>
+                    <TreeTableTester/>
                 </div>
                 <div className={showValue === 3 ? 'shown' : 'hidden'}>
-                    <h5>Multi-Header - </h5>
+                    <h5>Multi-Header - Not implemented yet</h5>
 
                 </div>
                 <div className={showValue === 4 ? 'shown' : 'hidden'}>
-                    <h5>Multi-Row - </h5>
+                    <h5>Multi-Row - Not implemented yet</h5>
                 </div>
             </div>
         </div>
