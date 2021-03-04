@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "packages": {
+    "bootstrap-react-treetable": {
+      "signature": "2ee5f11718c724a38d5d4c2c30a56905",
+      "file": true,
+      "replaced": "^2.0.1"
+    }
+  }
+}

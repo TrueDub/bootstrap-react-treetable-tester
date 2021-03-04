@@ -33,7 +33,7 @@ export const TreeTableTester = () => {
         visibleRows: 1,
         allowSorting: true,
         showPagination: true,
-        initialRowsPerPage: 50,
+        initialRowsPerPage: 20,
         allowFiltering: true
     };
 
