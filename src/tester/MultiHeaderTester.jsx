@@ -1,6 +1,6 @@
 import React from 'react';
-import BootstrapTreeTable from 'bootstrap-react-treetable';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {BootstrapTreeTable} from "bootstrap-react-treetable";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 import odiData from './odi.json';
 

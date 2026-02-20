@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import odiData from './odi.json';
+import {BootstrapTreeTable} from "bootstrap-react-treetable";
 
 export const DataTableTester = () => {
 
